@@ -6,9 +6,11 @@ import { addNowPlayingMovies } from '../utils/moviesSlice';
 import useNowPlayingMovies from '../hooks/useNowPlayingMovies';
 import SecondaryContainer from './SecondaryContainer';
 import MainContainer from './MainContainer';
+import usePopularMovies from '../hooks/usePopularMovies';
 
 const Browse = () => {
  useNowPlayingMovies();
+ usePopularMovies();
   return (
     <div>
       <Header/>
